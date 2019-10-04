@@ -2,7 +2,7 @@
   <jobTemplates>
     <jobTemplate id="notebook">
       <streamingExecutable>/application/notebook/run</streamingExecutable>
-      <defaultParameters><parameter id="regionOfInterest" title="WKT Polygon for the Region of Interest" abstract="Set the value of WKT Polygon" maxOccurs="1" scope="runtime" type="LiteralData">POLYGON ((-8.864205 38.88616500000001, -8.864205 38.986165, -8.964205000000002 38.986165, -8.964205000000002 38.88616500000001, -8.864205 38.88616500000001))</parameter><parameter id="nameOfRegion" title="Name of Region" abstract="Name of the region of interest" minOccurs="1" maxOccurs="1" scope="runtime" type="LiteralData">Leziria</parameter></defaultParameters>
+      <defaultParameters><parameter id="areaOfInterest" title="WKT Polygon for the Area of Interest" abstract="Set the value of WKT Polygon" maxOccurs="1" scope="runtime" type="LiteralData">POLYGON ((-8.908553 38.860527, -8.905850 38.863402, -8.901174 38.860026, -8.904520 38.857585, -8.908553 38.860527))</parameter><parameter id="nameOfArea" title="Name of Area of Interest" abstract="Name of the Area of Interest" minOccurs="1" maxOccurs="1" scope="runtime" type="LiteralData">P001</parameter></defaultParameters>
      <defaultJobconf>
         <property id="mapred.task.timeout">9900000000000</property>
       </defaultJobconf>
