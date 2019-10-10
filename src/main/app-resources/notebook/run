@@ -183,14 +183,14 @@ def publish(runtime):
    
     # publish
     ciop.log('INFO', 'Publishing ') 
-    ciop.publish(runtime, metalink=True, recursive=True) 
+    ciop.publish(runtime, metalink=True, recursive=True)
 
 def clean_up(runtime):
            
-    # clean-up 
+    # clean-up
     shutil.rmtree(runtime)
     # delete last retrieved file
-    shutil.rmtree(local_files[-1])
+    #shutil.rmtree(local_files[-1])
         
 def main():
 

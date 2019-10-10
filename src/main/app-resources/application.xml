@@ -1,0 +1,20 @@
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="application">
+  <jobTemplates>
+    <jobTemplate id="notebook">
+      <streamingExecutable>/application/notebook/run</streamingExecutable>
+      <defaultParameters><parameter id="areaOfInterest" title="WKT Polygon for the Area of Interest" abstract="Set the value of WKT Polygon" maxOccurs="1" scope="runtime" type="LiteralData">POLYGON ((-8.908553 38.860527, -8.905850 38.863402, -8.901174 38.860026, -8.904520 38.857585, -8.908553 38.860527))</parameter><parameter id="nameOfArea" title="Name of Area of Interest" abstract="Name of the Area of Interest" maxOccurs="1" scope="runtime" type="LiteralData">P001</parameter></defaultParameters>
+     <defaultJobconf>
+        <property id="mapred.task.timeout">9900000000000</property>
+      </defaultJobconf>
+    </jobTemplate>
+  </jobTemplates>
+  <workflow id="ewf-ext-02-03-01" title="Landsat-7 and -8 NDVI time series" abstract="Landsat-7 and -8 NDVI time series">
+    <workflowVersion>1.0</workflowVersion>
+    <node id="notebook">
+      <job id="notebook"/>
+      <sources>
+        <source id="source" title="Input references" abstract="Input references" refid="string:list" scope="runtime">https://catalog.terradue.com/espa-sr/search?format=atom&amp;uid=LE07_L1TP_204033_20171130_20171226_01_T1</source>
+      </sources>
+    </node>
+  </workflow>
+</application>
