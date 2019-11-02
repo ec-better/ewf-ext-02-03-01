@@ -11,7 +11,7 @@
     <version>2.0.0</version>
   </parent>
   <description>Landsat-7 and -8 NDVI time series</description>
-  <version>0.2-SNAPSHOT</version>
+  <version>0.2</version>
   <properties>
     <summary>Landsat-7 and -8 NDVI time series</summary>
     <description>Landsat-7 and -8 NDVI time series</description>
